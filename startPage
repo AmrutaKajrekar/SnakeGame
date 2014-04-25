@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type = "text/css" href = "styleSheet.css">
+</head>
+
+
+<body>
+<form id = "SnakeGameMenu" action="snakeGame.php"  method = "POST">
+
+		<title>Snake Game!</title>
+		
+		<label id = "gameName">Snake Game!</label></br></br>
+		
+		
+        <label id = "size" >Board Size:</label>
+        <select name="sizeOptions" id="sizeOptions">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        </select></br>
+
+		
+		<label id = "speed" name = "snakespeed" >Snake Speed:</label>
+		<input id="speedInput" size ="25" maxlength= "3" name = "speedInput"></br>
+		
+		<label id = "food" >Number of Goals:</label>
+		<input id="foodCount" size ="25" maxlength= "1" name = "foodCount"></br>
+
+		<label id = "walls" >Want walls on border? </label>
+		<select name="wallsOptions" id="wallsOptions">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        </select></br></br>
+		
+		<input type="submit" value="Start Game" id="startGame">
+
+	</form>
+
+</body>
+</html>
